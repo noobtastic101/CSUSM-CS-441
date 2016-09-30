@@ -10,6 +10,22 @@ import framework.User;
 
 public class BackendController 
 {
+	private static BackendController controller = null;
+	
+	private BackendController()
+	{
+		
+	}
+	
+	public static BackendController instance()
+	{
+		if(controller == null)
+			controller = new BackendController();
+		
+		return controller;
+	}
+	
+	
 	/*
 	 * USER METHODS
 	 */
@@ -21,7 +37,11 @@ public class BackendController
 	
 	public User signUserIn(String username)
 	{
-		return null;
+		//Does this user exist?
+		
+		User user = this.getUser(username); //if the user doesn't exist, this call will except
+		user.signedIn = true;
+		return user;
 	}
 
 	//The temp user object is created by the route calling this method, and populated with the information
