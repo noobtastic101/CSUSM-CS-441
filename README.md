@@ -1,9 +1,6 @@
-Peasant Kitchen
-College meals with your limited ingredients
 =================================
-## Team Name
-### Team Members and Primary Abilities
-#### Roles Subject to Change upon project requirements
+## Peasant Kitchen
+### College meals with your limited ingredients
 
 |#|Name|Primary Task|
 |---|---|---|
